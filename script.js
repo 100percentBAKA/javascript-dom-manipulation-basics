@@ -2,7 +2,8 @@
 
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
-document.querySelector('.number').textContent = secretNumber;
+let highScore = 0;
+// document.querySelector('.number').textContent = secretNumber;
 
 // console.log(document.getElementById('button-check').textContent);
 
@@ -16,6 +17,14 @@ document.querySelector('.check').addEventListener(
         }
         else if (guessedNumber === secretNumber) {
             document.querySelector('.guess-result').textContent = '🎉 Guess Correct!'
+            document.querySelector('body').style.backgroundColor = '#60b347';
+            document.querySelector('.number').style.width = '26rem';
+            document.querySelector('.number').textContent = secretNumber;
+
+            if (highScore < score) {
+                highScore = score;
+                document.querySelector('.span-high-score').textContent = highScore;
+            }
         }
         else {
 
@@ -41,5 +50,17 @@ document.querySelector('.check').addEventListener(
                 document.getElementById('button-check').disabled = true;
             }
         }
+    }
+)
+
+document.querySelector('.again').addEventListener(
+    'click', function () {
+        score = 20;
+        document.querySelector('.span-score').textContent = score;
+        document.querySelector('body').style.backgroundColor = "#222";
+        document.querySelector('.number').style.width = '13rem';
+        document.querySelector('.guess-result').textContent = 'Start Guessing . . .'
+        document.querySelector('.number').textContent = '?';
+        document.querySelector('.guess').value = '';
     }
 )
