@@ -35,30 +35,33 @@ p {
   margin-top: 5rem;
 }
 
-.button {
+.open-modal-button {
   padding: 3.2rem 4.8rem;
   border-radius: 1.5rem;
   box-shadow: 0.3rem 0.3rem #000;
   cursor: pointer;
 }
 
-.button:hover {
+.open-modal-button:hover {
   box-shadow: 0.5rem 0.5rem #000;
 }
 
-.model-hidden {
+.modal {
   width: 70%;
   top: 39%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -61%);
+  /* Moves towards left by 50% of its own width, 
+     Moves towards up  by 61% of its own height */
   border-radius: 5px;
   padding: 6rem;
   position: relative;
   background-color: #fff;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
-.close-model-button {
+.close-modal-button {
   padding: 1.2rem;
   position: absolute;
   top: 4px;
@@ -71,7 +74,7 @@ p {
   z-index: 10;
 }
 
-.overflow {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
