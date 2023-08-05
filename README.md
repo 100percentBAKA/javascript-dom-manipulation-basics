@@ -7,3 +7,6 @@
 ## 2) modal-window
 [DIR](https://github.com/onion-milkshake/javascript-dom-manipulation-basics/tree/main/modal-window) || [PREVIEW](https://modal-window-view.netlify.app/)
 
+## 3) pig-game
+[DIR](https://github.com/onion-milkshake/javascript-dom-manipulation-basics/tree/main/pig-game) || [PREVIEW](https://pig-game-onion.netlify.app/)
+
