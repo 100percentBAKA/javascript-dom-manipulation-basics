@@ -8,33 +8,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrapper-main">
-      <button class="button">🎲 ROLL DICE</button>
-      <button class="button">🔃 NEW GAME</button>
-      <button class="button">⏱️ HOLD</button>
+    <img src="dice-2.png" alt="Playing Dice" class="dice" />
+    <button class="button button-roll">🎲 ROLL DICE</button>
+    <button class="button button-new">🔃 NEW GAME</button>
+    <button class="button button-hold">⏱️ HOLD</button>
 
-      <main>
-        <section class="player player-1 player-active">
-          <h2 class="name">Player 1</h2>
-          <p class="score">0</p>
+    <main>
+      <section class="player player-1 player-active">
+        <h2 class="name">Player 1</h2>
+        <p class="score" id="score-1">0</p>
 
-          <div class="current">
-            <p class="current-label">Current</p>
-            <p class="current-score">0</p>
-          </div>
-        </section>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current-score-1">0</p>
+        </div>
+      </section>
 
-        <section class="player player-2">
-          <h2 class="name">Player 2</h2>
-          <p class="score">0</p>
+      <section class="player player-2">
+        <h2 class="name">Player 2</h2>
+        <p class="score" id="score-2">0</p>
 
-          <div class="current">
-            <p class="current-label">Current</p>
-            <p class="current-score">0</p>
-          </div>
-        </section>
-      </main>
-    </div>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current-score-2">0</p>
+        </div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>
