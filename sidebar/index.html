@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="sidebar-top">
+        <div class="svg-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="none"
+              d="M179.9 388l-76.16-132 76.16 132zM179.9 388h152.21l76.15-132-76.15-132H179.9l-76.16 132 76.16 132zM103.74 256l76.16-132-76.16 132z"
+            />
+            <path
+              d="M496 256L376 48H239.74l-43.84 76h136.21l76.15 132-76.15 132H195.9l43.84 76H376l120-208z"
+            />
+            <path
+              d="M179.9 388l-76.16-132 76.16-132 43.84-76H136L16 256l120 208h87.74l-43.84-76z"
+            />
+          </svg>
+        </div>
+        <p class="company-name-sidebar">Track Kar</p>
+        <button class="expand-button">
+          <ion-icon
+            name="chevron-forward-outline"
+            class="sidebar-top-icon"
+          ></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-main">
+        <ul class="list">
+          <li class="list-item">
+            <ion-icon
+              name="card-outline"
+              class="sidebar-main-list-icon"
+            ></ion-icon
+            ><span class="company-name-sidebar">Portfolio</span>
+          </li>
+          <li>
+            <ion-icon
+              name="podium-outline"
+              class="sidebar-main-list-icon"
+            ></ion-icon
+            ><span class="company-name-sidebar">Analytics</span>
+          </li>
+          <li>
+            <ion-icon
+              name="thermometer-outline"
+              class="sidebar-main-list-icon"
+            ></ion-icon
+            ><span class="company-name-sidebar">Performance</span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
