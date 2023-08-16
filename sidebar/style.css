@@ -25,6 +25,8 @@ i {
 
 .sidebar {
   position: fixed;
+  top: 0;
+  left: 0;
   background: #11101d;
   padding: 1rem 1.6rem;
   height: 100%;
