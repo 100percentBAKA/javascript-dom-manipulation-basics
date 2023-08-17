@@ -13,5 +13,5 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => wrapper.removeChild(bubble), 2000);
     }
 
-    window.onmousedown = event => animateBubble(event.clientX);
+    window.onmousemove = event => animateBubble(event.clientX);
 });

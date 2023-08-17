@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root {
+  --sidebar-color: #11101d;
+  --main-area-color: #e4e9f7;
+  --inputField-color: #1d1b31;
+}
 
 * {
   padding: 0;
@@ -14,126 +20,97 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-i {
-  color: #fff;
-}
-
 .body-container {
-  height: 100vh;
   display: flex;
 }
 
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #11101d;
-  padding: 1rem 1.6rem;
-  height: 100%;
-  width: 7.2rem;
-  transition: all 0.4s ease;
+  width: 25rem;
+  background: var(--sidebar-color);
+  color: #fff;
+  height: 100vh;
+  padding: 1.4rem;
 }
 
-.open {
-  width: 25rem;
+.main-area {
+  background: var(--main-area-color);
+  width: 100%;
 }
 
 .sidebar .logo-container {
   display: flex;
-  position: relative;
   align-items: center;
+  margin-bottom: 2rem;
+  column-gap: 1rem;
 }
 
 .sidebar .logo-container .logo-name {
-  font-size: 2.6rem;
-  color: #fff;
+  font-size: 2.4rem;
   font-weight: 600;
-  transform: translateY(0.35rem);
 }
 
-.sidebar .logo-container #menu-button {
-  position: absolute;
-  top: 0.8rem;
-  right: 0;
-  cursor: pointer;
-}
-
-.sidebar .logo-container i {
-  padding: 0 1.3rem;
-  margin-right: 0.1rem;
+.sidebar .nav-list {
+  height: 100%;
 }
 
 .sidebar ul {
-  margin-top: 2.4rem;
+  list-style: none;
 }
 
 .sidebar ul li {
   position: relative;
-  list-style: none;
-  height: 6rem;
-  width: 100%;
-  margin: 0 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
-.sidebar ul li a {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
-  /* column-gap: 3rem; */
-  transition: all 0.4s ease;
-}
-
-.sidebar ul li input {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 12px;
+.sidebar input {
+  font-size: 1.6rem;
+  background-color: var(--inputField-color);
   outline: none;
   border: none;
-  background: #1d1b31;
-  padding: 0.5rem;
-  font-size: 2rem;
-  color: #fff;
-  position: relative;
-  /* text-align: center; */
-  text-indent: 4.4rem;
+  height: 5rem;
+  width: 100%;
+  border-radius: 1.2rem;
+  padding: 0 2rem 0 5rem;
 }
 
-.sidebar ul li .bx-search {
+.sidebar .bx-search {
   position: absolute;
-  z-index: 1;
   top: 50%;
-  left: 1.38rem;
+  left: 0;
   transform: translateY(-50%);
+  font-size: 2.4rem;
+  background: #1d1b31;
+  color: #fff;
 }
 
-.sidebar ul li a:hover {
-  color: #11101d;
+/* .sidebar input:hover {
+  background-color: #ff4;
+} */
+
+.sidebar ul a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.2rem;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  column-gap: 1.4rem;
+}
+
+.sidebar ul a:hover {
   background: #fff;
 }
 
-.sidebar ul li a i {
+.sidebar li i {
+  color: #fff;
   height: 5rem;
-  min-width: 5rem;
-  border-radius: 1.5rem;
   line-height: 5rem;
-  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 1.2rem;
 }
 
-.sidebar.open ~ .main-area {
-  left: 25rem;
-  width: calc(100% - 25rem);
+.sidebar li .links_name {
+  font-size: 1.6rem;
+  color: #fff;
 }
-
-.main-area {
-  background: #e4e9f7;
-  min-height: 100vh;
-}
-
-/* Above code adjusts the width of the main-area when sidebar is opened/closed */
