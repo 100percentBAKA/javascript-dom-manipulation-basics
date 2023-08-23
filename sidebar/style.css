@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.body-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  background: #555;
+}
+
+.sidebar .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+.sidebar ul a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.sidebar .nav-list {
+  padding: 2rem;
+}
+
+.main-area {
+  background-color: blue;
+  width: 100%;
+}
+
+.main-area .toggle-button {
+  display: inline-block;
+  padding: 3rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 1.2rem;
+  margin: 2rem;
+  cursor: pointer;
+  box-shadow: 0.7rem 0.7rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.main-area .toggle-button:active,
+.main-area .toggle-button:hover {
+  background: rgba(0, 0, 0, 0.3);
+}

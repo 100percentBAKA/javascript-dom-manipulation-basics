@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background: #eceaff;
+  color: #525252;
+}
+
+nav {
+  width: 100%;
+  background: #1a1a1a;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-img {
+  width: 120px;
+}
+
+.user-img {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: px;
+}
+
+.hero ul {
+  list-style: none;
+  display: flex;
+  column-gap: 30px;
+}
+
+.hero li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+
+  transition: all 0.3s;
+}
+
+.hero li a:hover,
+.hero li a:active {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.sub-menu-wrapper {
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  width: 320px;
+
+  border-top: rgba(0, 0, 0, 0.4);
+  border-left: rgba(0, 0, 0, 0.4);
+  box-shadow: 8px 8px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+
+  z-index: 1;
+}
+
+.sub-menu {
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-menu .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-menu .user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu-wrapper .sub-menu hr {
+  border: 0;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  margin: 15px 0 10px 0;
+}
