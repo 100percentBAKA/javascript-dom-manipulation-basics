@@ -1,0 +1,41 @@
+body {
+  background: #000;
+}
+
+#bubble-wrapper {
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+  bottom: 0px;
+
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bubble {
+  /* height: max(300px, 30vw);
+  width: max(300px, 30vw); */
+  height: 25px;
+  width: 25px;
+
+  background-color: rgba(33, 150, 243, 0.8);
+  border-radius: 100%;
+
+  position: absolute;
+  left: 50%;
+  top: 100%;
+
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  from,
+  to {
+    transform: translate(-50%, 0%);
+  }
+
+  50% {
+    transform: translate(-50%, -20%);
+  }
+}
