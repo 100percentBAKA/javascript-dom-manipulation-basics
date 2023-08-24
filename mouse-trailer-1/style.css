@@ -1,0 +1,26 @@
+body,
+html {
+  background-color: #a3d5d3;
+}
+
+.mouse-trailer {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: black;
+
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+
+.circle {
+  background-color: #000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
