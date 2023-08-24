@@ -19,3 +19,7 @@
 ## 6) interactive-bubble-2
 [DIR](https://github.com/onion-milkshake/javascript-dom-manipulation-basics/tree/main/interactive-bubble-2) &nbsp; || &nbsp; [PREVIEW](https://interactive-bubble-2.netlify.app/)
 
+## 7) mouse-trailer-1
+[DIR](https://github.com/onion-milkshake/javascript-dom-manipulation-basics/tree/main/mouse-trailer-1) &nbsp; || &nbsp; [PREVIEW](https://mouse-trailer-1.netlify.app/)
+
+
