@@ -1,0 +1,72 @@
+body {
+  background-color: #333;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.bx {
+  color: #fff;
+}
+
+.trailer {
+  height: 1.2vw;
+  width: 1.2vw;
+
+  background-color: rgba(0, 0, 0, 0.477);
+  backdrop-filter: blur(3px);
+  border-radius: 1.2vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 100000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  pointer-events: none;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 2vw;
+}
+
+.interactable {
+  background-position: center;
+  background-size: 100%;
+  border-radius: 12px;
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.188);
+  opacity: 0.5;
+  transition: transform 400ms ease, opacity 400ms ease;
+
+  cursor: pointer;
+}
+
+.interactable:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.277);
+  opacity: 0.8;
+}
+
+.img-1,
+.img-2 {
+  background-image: url(./resources/img-1.jpg);
+  height: 300px;
+  width: 300px;
+}
+
+.img-2 {
+  background-image: url(./resources/img-2.jpg);
+}
