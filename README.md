@@ -25,4 +25,7 @@
 ## 8) mouse-trailer-2
 [DIR](https://github.com/onion-milkshake/javascript-dom-manipulation-basics/tree/main/mouse-trailer-2) &nbsp; || &nbsp; [PREVIEW](https://mouse-trailer-2.netlify.app/)
 
+## 9) inteactive-button-1
+[DIR](https://github.com/onion-milkshake/javascript-dom-manipulation-basics/tree/main/interactive-button-1) &nbsp; || &nbsp; [PREVIEW](https://interactive-button-1.netlify.app/)
+
 
