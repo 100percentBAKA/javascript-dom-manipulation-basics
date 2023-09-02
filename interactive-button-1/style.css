@@ -20,13 +20,16 @@
 
 .button {
   position: relative;
-  display: inline-block;
   border: none;
   border-radius: var(--border-radius);
   background: gray;
   padding: var(--border-gap);
   cursor: pointer;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
 }
 
 .content {
@@ -44,6 +47,10 @@
   border-radius: var(--border-radius);
   width: calc(100% - var(--border-gap));
   height: calc(100% - var(--border-gap));
+  flex: 1;
+  width: auto;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .gradient {
