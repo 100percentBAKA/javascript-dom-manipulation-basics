@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy";
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.stripe {
+  border-top: 1px solid #1c1c1c;
+  border-bottom: 1px solid #1c1c1c;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.stripe-2 {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  background-color: orangered;
+}
+
+.ctn {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 3vw;
+  flex-shrink: 0;
+}
+
+/* Padding for the second stripe  */
+.e-padding {
+  padding: 0 7vw !important;
+}
+
+.element h1 {
+  display: flex;
+}
+
+.element span {
+  font-size: 10px;
+}
+
+.photo {
+  height: 2vw;
+  width: 2vw;
+  background-color: green;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
