@@ -31,4 +31,7 @@
 ## 10) inteactive-button-2
 [DIR](#) &nbsp; || &nbsp; [PREVIEW](https://interactive-button-2.netlify.app/)
 
+## 11) infinite-scroll
+[DIR](https://github.com/onion-milkshake/javascript-dom-manipulation-basics/tree/main/infinite-scroll) &nbsp; || &nbsp; [PREVIEW](https://infinite-scroll-onion.netlify.app/)
+
 
