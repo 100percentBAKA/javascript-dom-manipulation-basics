@@ -34,4 +34,7 @@
 ## 11) infinite-scroll
 [DIR](https://github.com/onion-milkshake/javascript-dom-manipulation-basics/tree/main/infinite-scroll) &nbsp; || &nbsp; [PREVIEW](https://infinite-scroll-onion.netlify.app/)
 
+## 12) interactive-particle-effect (obtained from codepen)
+[DIR](https://github.com/onion-milkshake/javascript-dom-manipulation-basics/tree/main/interactive-particle-effect) &nbsp; || &nbsp; [PREVIEW](https://cosmic-sopapillas-a19f16.netlify.app/)
+
 
